@@ -1,4 +1,6 @@
 import streamlit as st
+import pandas as pd
+table=pd.DataFrame({"column1":[1,2,3,4,5,6,7],"column2":[11,12,13,14,15,16,17]})
 st.title("Hi i am streamlit web app")
 st.subheader("Hi I am your subheader")
 st.header("I am header")
@@ -15,3 +17,7 @@ def funct():
     return 0;
 """
 st.code(code,language="python")
+st.write("## H2")
+st.metric(label="Wind speed", value='120ms⁻¹',delta="-1.4ms⁻¹ ")
+st.table(table)
+st.dataframe(table)
