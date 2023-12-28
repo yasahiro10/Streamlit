@@ -24,3 +24,17 @@ st.dataframe(table)#for dataframe we can stor the numbers
 st.image("image.jpg",caption="this is an image", width=400)
 #st.audio()
 #st.video()
+#remove the hamburger & footer of streamlit
+st.markdown("""
+<style>
+.st-emotion-cache-6q9sum.ef3psqc4
+{
+    visibility: hidden;            
+}
+.st-emotion-cache-1wbqy5l.e17vllj40
+{
+    visibility: hidden;            
+}
+            
+</style>
+""", unsafe_allow_html=True)
