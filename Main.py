@@ -20,4 +20,7 @@ st.code(code,language="python")
 st.write("## H2")
 st.metric(label="Wind speed", value='120ms⁻¹',delta="-1.4ms⁻¹ ")
 st.table(table)
-st.dataframe(table)
+st.dataframe(table)#for dataframe we can stor the numbers
+st.image("image.jpg",caption="this is an image", width=400)
+#st.audio()
+#st.video()
