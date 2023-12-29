@@ -38,3 +38,7 @@ st.markdown("""
             
 </style>
 """, unsafe_allow_html=True)
+def change():
+    print(st.session_state.checker)
+state=st.checkbox("checkbox",value=True,on_change=change,key="checker")#value=False by default but if it is True, there will be  a tick mark 
+#
