@@ -41,4 +41,13 @@ st.markdown("""
 def change():
     print(st.session_state.checker)
 state=st.checkbox("checkbox",value=True,on_change=change,key="checker")#value=False by default but if it is True, there will be  a tick mark 
-#
+#session_state : true or false of the checkbox if it's checked or not
+#radio_btn=st.radio('In which country do you live?',options=("US","Uk","canada","TN"))
+#print(radio_btn)
+def btn_click():
+    print('button clicked')
+btn=st.button("Click Me!",on_click=btn_click)
+st.link_button(":coffee:","https://www.linkedin.com/in/mohamed-bechir-yassine-ouardani/")
+select=st.selectbox("what is your favourite car ?",options=("audi","bmw","polo"))
+multi_select=st.multiselect("what is your favourite brand",options=('gucci',"bmx",'afro'))
+st.write(multi_select)
